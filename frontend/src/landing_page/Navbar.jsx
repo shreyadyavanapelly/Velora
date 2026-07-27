@@ -7,7 +7,7 @@ function Navbar() {
     const navigate=useNavigate();
     const [isLoggedIn, setIsLoggedIn] = useState(false);
     useEffect(()=>{
-        axios.post("http://localhost:5000/verify",{},{withCredentials:true})
+        axios.post("https://velora-ak5w.onrender.com/verify",{},{withCredentials:true})
         .then(()=>{
             setIsLoggedIn(true);
         })
@@ -17,7 +17,7 @@ function Navbar() {
     },[]);
     const handlelogout =async()=>{
         try{
-            await axios.get("http://localhost:5000/logout",{
+            await axios.get("https://velora-ak5w.onrender.com/logout",{
                 withCredentials:true,
             });
             setIsLoggedIn(false);

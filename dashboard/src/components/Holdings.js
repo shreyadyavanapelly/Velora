@@ -6,7 +6,7 @@ const Holdings = () => {
   const [allHoldings,setAllHoldings]=useState([]);
   useEffect(() => {
   axios
-    .get("http://localhost:5000/allHoldings", {
+    .get("https://velora-ak5w.onrender.com/allHoldings", {
       withCredentials: true,
     })
     .then((res) => {

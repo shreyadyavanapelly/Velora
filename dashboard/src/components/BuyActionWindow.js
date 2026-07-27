@@ -15,7 +15,7 @@ const BuyActionWindow = ({ uid }) => {
   const handleBuyClick = async() => {
     try{
     console.log("Buy clicked");
-    const res = await axios.post("http://localhost:5000/newOrder", {
+    const res = await axios.post("https://velora-ak5w.onrender.com/newOrder", {
       name: uid,
       qty: Number(stockQuantity),
       price: Number(stockPrice),

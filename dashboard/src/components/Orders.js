@@ -6,7 +6,7 @@ const Orders = () => {
   const [orders, setOrders] = useState([]);
   useEffect(() => {
     axios
-    .get("http://localhost:5000/allOrders", { withCredentials: true })
+    .get("https://velora-ak5w.onrender.com/allOrders", { withCredentials: true })
     .then((response) => {
       console.log("Fetched orders:", response.data);
       setOrders(response.data);

@@ -5,7 +5,7 @@ const Positions = () => {
   const [allPositions,setAllPositions]=useState([]);
   useEffect(() => {
   axios
-    .get("http://localhost:5000/allPositions", {
+    .get("https://velora-ak5w.onrender.com/allPositions", {
       withCredentials: true,
     })
     .then((res) => {
