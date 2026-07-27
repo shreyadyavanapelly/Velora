@@ -19,7 +19,7 @@ const bcrypt = require("bcryptjs");
 const {createSecretToken} = require("./utils/SecretToken");
 app.use(
   cors({
-    origin: ["http://localhost:5173", "http://localhost:3000"],
+    origin: ["http://localhost:5173", "http://localhost:3000","https://velora-1-afgb.onrender.com","https://velora-2-nvno.onrender.com"],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })
