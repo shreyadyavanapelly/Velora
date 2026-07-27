@@ -1,4 +1,5 @@
 import { StrictMode } from 'react'
+import ReactDOM from 'react-dom/client'
 import { createRoot } from 'react-dom/client'
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
 import './index.css'
@@ -11,6 +12,8 @@ import SignupPage from './landing_page/signup/Signup'
 import Navbar from './landing_page/Navbar'
 import Footer from './landing_page/Footer'
 import Notfound from './landing_page/Notfound'
+import 'react-toastify/dist/ReactToastify.css';
+import LoginPage from './landing_page/signup/Login'
 createRoot(document.getElementById('root')).render(
     <BrowserRouter>
       <div className="d-flex flex-column min-vh-100">
@@ -23,6 +26,7 @@ createRoot(document.getElementById('root')).render(
         <Route path="/pricing" element={<PricingPage/>} />
         <Route path="/support" element={<SupportPage/>} />
         <Route path="/signup" element={<SignupPage/>} />
+        <Route path="/login" element={<LoginPage/>} />
         <Route path="*" element={<Notfound/>} />
       </Routes>
       </main>
