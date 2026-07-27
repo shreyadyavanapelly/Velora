@@ -32,7 +32,7 @@ const Login = () => {
     console.log("submit button clicked");
     try {
       const { data } = await axios.post(
-        "http://localhost:5000/login",
+        "https://velora-ak5w.onrender.com/login",
         {
           ...inputValue,
         },
@@ -44,7 +44,7 @@ const Login = () => {
       if (success) {
         handleSuccess(message);
         setTimeout(() => {
-         window.location.href = "http://localhost:3000";
+         window.location.href = "https://velora-2-nvno.onrender.com";
         }, 1000);
       } else {
         handleError(message);

@@ -32,7 +32,7 @@ const Signup = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "http://localhost:5000/signup",
+        "https://velora-ak5w.onrender.com/signup",
         {
           ...inputValue,
         },
