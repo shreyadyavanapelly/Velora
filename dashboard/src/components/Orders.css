@@ -1,0 +1,29 @@
+.orders {
+  padding: 30px;
+}
+
+.order-table {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.order-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.order-table th,
+.order-table td {
+  padding: 12px;
+  border-bottom: 1px solid #e6e6e6;
+  text-align: left;
+}
+
+.order-table th {
+  color: #666;
+  font-weight: 600;
+}
+
+.order-table tr:hover {
+  background-color: #f8f8f8;
+}
