@@ -42,7 +42,7 @@ const Signup = () => {
       if (success) {
         handleSuccess(message);
         setTimeout(() => {
-          navigate("/");
+          window.location.href="https://velora-2-nvno.onrender.com";
         }, 1000);
       } else {
         handleError(message);
