@@ -36,7 +36,7 @@ module.exports.Login =  async (req, res) => {
     res.cookie("token", token,{
       httpOnly: true,
       secure: true,
-      sameSite:"none",
+      sameSite:"None",
     });
     console.log("Cookie sent");
     console.log("Response Headers:", res.getHeaders());
