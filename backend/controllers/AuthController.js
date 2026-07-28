@@ -33,7 +33,11 @@ module.exports.Login =  async (req, res) => {
     // Generate a token (you can use JWT or any other method)
     const token = createSecretToken(user._id);
     console.log("Generated token:", token);
-    res.cookie("token", token);
+    res.cookie("token", token,{
+      httpOnly: true,
+      secure: true,
+      sameSite:"none",
+    });
     console.log("Cookie sent");
     console.log("Response Headers:", res.getHeaders());
     return res.status(200).json({ success: true, message: "Login successful", token });

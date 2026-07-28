@@ -299,8 +299,8 @@ app.get("/allOrders", userVerification, async (req, res) => {
 app.get("/logout",(req,res)=>{
   res.clearCookie("token",{
     httpOnly: true,
-    sameSite:"lax",
-    secure:false,
+    secure:true,
+    sameSite:"none",
   });
   res.json({
     succes:true,
